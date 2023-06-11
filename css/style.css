@@ -1,0 +1,295 @@
+/*head*/
+
+body{
+	background-color: white;
+}
+* {
+	padding:0;
+	margin:0;
+	font-family: sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.container {
+	width:80%;
+	margin:0 auto;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+header h1 {
+	float: left;
+	padding:15px 0;
+	color: #ac5eff;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+header ul li a:hover {
+	background-color: #ac5eff;
+	color: #fff;
+}
+.active {
+	background-color: #ac5eff;
+	color: #fff;
+}
+.banner {
+	height: 60vh;
+	background-image: url('../img/natre.jpg');
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(127, 95, 255, 0.6);
+}
+.banner h2 {
+	color: #fff;
+	z-index: 1;
+	padding: 30px 25px;
+	border:3px solid #fff;
+}
+.text {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+section {
+	padding:50px 0;
+}
+section h3 {
+	text-align: center;
+	padding:20px 0;
+	color: #ac5eff;
+	margin-bottom: 25px;
+}
+.about,
+.service {
+	padding-bottom: 10px;
+}
+.service {
+	background-color: #363537;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.about p {
+	color: #666;
+	word-spacing: 1px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.box {
+	color: #ac5eff	;
+}
+.box:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.box .col-4 {
+	width:33%;
+	padding:0 100px 30px;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+	float: right;
+}
+.icon {
+	width:70px;
+	height:70px;
+	border:1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	margin:auto;
+}
+
+footer {
+	padding:20px 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+
+.label {
+	display: flex;
+	background-color: #363537;
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+@media screen and (max-width: 768px){
+	.container {
+		width:100%;
+	}
+	header h1 {
+		text-align: center;
+		float: none;
+	}
+	header ul {
+		text-align: center;
+		float: none;
+	}
+	.box .col-4 {
+		width:110%;
+		float: none;
+		margin-bottom: 10px;
+	}
+}
+
+/*cards*/
+.cardtainer{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.cardtainer2{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card{
+	border-radius: 10px;
+	background-color: white;
+	width: 270px;
+	height: 350px;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+.card-image{
+	border-top-right-radius: 10px;
+	background-color: #666;
+	display:flex;
+
+}
+img{
+	width: 300px;
+	height: 140px;
+}
+
+.card h2{
+	padding: 5px;
+}
+
+.card p{
+	padding: 10px;
+}
+
+.card a{
+	position:absolute;
+	background-color: black;
+	color: white;
+	padding: 10px 10px;
+	display: block;
+	text-align: center;
+	margin: 20px 80px;
+	text-decoration: none;
+	border-radius: 5px;
+	transform: scale(1.03);
+	transition: all 0.5s ease;
+}
+
+.card:hover{
+	background-color: rgb(62, 62, 62);
+	color: white;
+	cursor: pointer;
+	transform: scale(1.03);
+	transition: all 0.5s ease;
+}
+
+/*table di more section*/
+.mortab{
+	background-color: #333;
+	color: #fff;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.mortab ul li{
+	display: flex;
+	justify-content:flex-start;
+	align-items: flex-start;
+	text-align:left;
+}
+
+.mortab .specs-1{
+	color: black;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+}
+
+.button{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	float: left;
+}
+
+/*FORM*/
+.signup-form {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	margin-top: 60px;
+	padding-bottom: 70px;
+  }
+  
+  label-2 {
+	display: block;
+	margin-bottom: 5px;
+  }
+  
+  input {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+  }
+  
+  input[type="button"] {
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+  }
+  
+  input[type="button"]:hover {
+	background-color: #45a049;
+  }
+  
